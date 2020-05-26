@@ -1,0 +1,9 @@
+c:\PROJETOS\Componentes\INB.Infra.Data\bin\Debug\INB.Infra.Data.dll.config
+c:\PROJETOS\Componentes\INB.Infra.Data\bin\Debug\INB.Infra.Data.xml
+c:\PROJETOS\Componentes\INB.Infra.Data\bin\Debug\INB.Infra.Data.dll
+c:\PROJETOS\Componentes\INB.Infra.Data\bin\Debug\INB.Infra.Data.pdb
+c:\PROJETOS\Componentes\INB.Infra.Data\obj\Debug\INB.Infra.Data.dll
+c:\PROJETOS\Componentes\INB.Infra.Data\obj\Debug\INB.Infra.Data.pdb
+C:\PROJETOS\Componentes\INB.Infra.Data\obj\Debug\INB.Infra.Data.csprojAssemblyReference.cache
+C:\PROJETOS\Componentes\INB.Infra.Data\obj\Debug\INB.Infra.Data.csproj.CoreCompileInputs.cache
+C:\PROJETOS\Componentes\INB.Infra.Data\obj\Debug\INB.Infra.Data.csproj.CopyComplete

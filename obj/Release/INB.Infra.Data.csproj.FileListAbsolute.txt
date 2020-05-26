@@ -1,0 +1,11 @@
+C:\PROJETOS\Componentes\INB.Infra.Data\bin\Release\INB.Infra.Data.dll.config
+C:\PROJETOS\Componentes\INB.Infra.Data\bin\Release\INB.Infra.Data.xml
+C:\PROJETOS\Componentes\INB.Infra.Data\bin\Release\INB.Infra.Data.dll
+C:\PROJETOS\Componentes\INB.Infra.Data\bin\Release\INB.Infra.Data.pdb
+C:\PROJETOS\Componentes\INB.Infra.Data\bin\Release\EntityFramework.dll
+C:\PROJETOS\Componentes\INB.Infra.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\PROJETOS\Componentes\INB.Infra.Data\bin\Release\EntityFramework.xml
+C:\PROJETOS\Componentes\INB.Infra.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\PROJETOS\Componentes\INB.Infra.Data\obj\Release\INB.Infra.Data.dll
+C:\PROJETOS\Componentes\INB.Infra.Data\obj\Release\INB.Infra.Data.pdb
+C:\PROJETOS\Componentes\INB.Infra.Data\obj\Release\INB.Infra.Data.csprojResolveAssemblyReference.cache

@@ -1,0 +1,48 @@
+﻿SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[spu_LogTransfereHistorico](@Dias int) as 
+BEGIN
+	Set noCount on
+	
+	BEGIN TRANSACTION
+	
+	INSERT INTO T_LOG_HISTORICO 
+	(
+		[LOCodigoTipoLog],
+		[LOCodigoSistema],
+		[LOEntidade],
+		[LODataHora],
+		[LOUsuario],
+		[LOIPRede],
+		[LONomeEstacao],
+		[LOLog],
+		[LOSql],
+		[LOUsuarioAutenticado]
+	)
+	SELECT 
+		[LOCodigoTipoLog],
+		[LOCodigoSistema],
+		[LOEntidade],
+		[LODataHora],
+		[LOUsuario],
+		[LOIPRede],
+		[LONomeEstacao],
+		[LOLog],
+		[LOSql], 
+		[LOUsuarioAutenticado]
+	FROM T_LOG WHERE T_LOG.LODataHora < DateAdd(d, -@Dias, Convert(date, GETDATE()));
+	
+	DELETE FROM T_LOG WHERE T_LOG.LODATAHORA < DateAdd(d, -@Dias, Convert(date, GETDATE()));
+
+	COMMIT TRANSACTION
+
+	
+
+	Set noCount off
+END
+GO
+

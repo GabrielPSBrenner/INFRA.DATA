@@ -1,0 +1,32 @@
+﻿SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[T_LOG](
+	[LOCodigo] [int] IDENTITY(1,1) NOT NULL,
+	[LOCodigoSistema] [int] NOT NULL,
+	[LOCodigoTipoLog] [int] NOT NULL,
+	[LOEntidade] [varchar](255) NOT NULL,
+	[LODataHora] [datetime] NOT NULL,
+	[LOUsuario] [int] NOT NULL,
+	[LOIPRede] [varchar](25) NOT NULL,
+	[LONomeEstacao] [varchar](50) NOT NULL,
+	[LOLog] [varchar](max) NULL,
+	[LOSql] [varchar](max) NULL,
+	[LOUsuarioAutenticado] [int] NULL,
+ CONSTRAINT [PK__T_LOG__5E8A0973] PRIMARY KEY CLUSTERED 
+(
+	[LOCodigo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+

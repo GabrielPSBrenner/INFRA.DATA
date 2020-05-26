@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>INB.Infra.Data</name>
+    </assembly>
+    <members>
+        <member name="M:INB.Infra.Data.RepositoryBase`3.Incluir(`0,System.Boolean)">
+            <summary>
+            Insere o registro no banco.
+            </summary>
+            <param name="obj">Objeto a ser persistido.</param>
+            <param name="SaveChanges">Define se a operação será efetivada imediatamente.</param>
+            <returns></returns>
+        </member>
+        <member name="M:INB.Infra.Data.RepositoryBase`3.Incluir(`0)">
+            <summary>
+            Insere o registro no banco.
+            </summary>
+            <param name="obj">Objeto a ser persistido.</param>
+            <returns></returns>
+        </member>
+        <member name="M:INB.Infra.Data.RepositoryBase`3.Alterar(`0,System.Boolean)">
+            <summary>
+            Persiste o objeto alterado no banco.
+            </summary>
+            <param name="obj">Objeto a ser persistido.</param>
+            <param name="SaveChanges">Define se a operação será efetivada imediatamente.</param>
+        </member>
+        <member name="M:INB.Infra.Data.RepositoryBase`3.Alterar(`0)">
+            <summary>
+            Persiste o objeto alterado no banco.
+            </summary>
+            <param name="obj">Objeto a ser persistido.</param>
+        </member>
+        <member name="M:INB.Infra.Data.RepositoryBase`3.Alterar(`0,System.Boolean,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])">
+            <summary>
+            Persiste as alterações apenas das propriedades definidas.
+            </summary>
+            <param name="SaveChanges">Define se a operação será efetivada imediatamente.</param>
+            <param name="obj">Objeto a ser persistido.</param>
+            <param name="propertiesToUpdate">Propriedades a serem modificadas.</param>
+        </member>
+        <member name="M:INB.Infra.Data.RepositoryBase`3.Alterar(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])">
+            <summary>
+            Persiste as alterações apenas das propriedades definidas.
+            </summary>
+            <param name="obj">Objeto a ser persistido.</param>
+            <param name="propertiesToUpdate">Propriedades a serem modificadas.</param>
+        </member>
+        <member name="M:INB.Infra.Data.RepositoryBase`3.Excluir(`0,System.Boolean)">
+            <summary>
+            Exclui o registro do banco.
+            </summary>
+            <param name="obj">Objeto com identificador referente ao registro a ser excluído.</param>
+            <param name="SaveChanges">Define se a operação será efetivada imediatamente.</param>
+        </member>
+        <member name="M:INB.Infra.Data.RepositoryBase`3.Excluir(`0)">
+            <summary>
+            Exclui o registro do banco.
+            </summary>
+            <param name="obj">Objeto com identificador referente ao registro a ser excluído.</param>
+        </member>
+        <member name="M:INB.Infra.Data.RepositoryBase`3.Excluir(System.Boolean,System.Object[])">
+            <summary>
+             Exclui o registro do banco utilizando chave primária.
+            </summary>
+            <param name="SaveChanges">Define se a operação será efetivada imediatamente.</param>
+            <param name="keyValues">Identificador.</param>
+        </member>
+        <member name="M:INB.Infra.Data.RepositoryBase`3.Excluir(System.Object[])">
+            <summary>
+             Exclui o registro do banco utilizando chave primária.
+            </summary>
+            <param name="keyValues">Identificador.</param>
+        </member>
+        <member name="M:INB.Infra.Data.RepositoryBase`3.SelecionarChaveSemLog(System.Object[])">
+            <summary>
+            Faz o mesmo que o SelecionarChave(params object[] keyvalues), 
+            mas ignora o log independente da configuração na hora de instanciar o repositório.
+            </summary>
+            <param name="keyvalues"></param>
+            <returns></returns>
+        </member>
+        <member name="M:INB.Infra.Data.Util.Converter.ObjectToString(System.Object)">
+            <summary>
+            Serializa o objeto para JSON. Se não for possível tentará serializar para XML.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:INB.Infra.Data.LinqToSQL.Interfaces.IRepositoryBase`3">
+            <summary>
+            
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <typeparam name="TContext"></typeparam>
+            <typeparam name="TLog"></typeparam>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Interfaces.IRepositoryBase`3.Incluir(`0)">
+            <summary>
+            Insere o registro no banco.
+            </summary>
+            <param name="obj">Objeto a ser persistido.</param>
+            <returns></returns>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Interfaces.IRepositoryBase`3.Alterar(`0)">
+            <summary>
+            Persiste o objeto alterado no banco.
+            </summary>
+            <param name="obj">Objeto a ser persistido.</param>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Interfaces.IRepositoryBase`3.Excluir(`0)">
+            <summary>
+            Exclui o registro do banco.
+            </summary>
+            <param name="obj">Objeto com identificador referente ao registro a ser excluído.</param>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Interfaces.IRepositoryBase`3.Excluir(System.Object[])">
+            <summary>
+             Exclui o registro do banco utilizando chave primária.
+            </summary>
+            <param name="keyvalues">Identificador.</param>
+        </member>
+        <member name="P:INB.Infra.Data.LinqToSQL.Interfaces.IRepositoryBase`3.DataContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Abstracts.RepositoryBase`3.Incluir(`0,System.Boolean)">
+            <summary>
+            Insere o registro no banco.
+            </summary>
+            <param name="obj">Objeto a ser persistido.</param>
+            <param name="SaveChanges">Define se a operação será efetivada imediatamente.</param>
+            <returns></returns>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Abstracts.RepositoryBase`3.Incluir(`0)">
+            <summary>
+            Insere o registro no banco.
+            </summary>
+            <param name="obj">Objeto a ser persistido.</param>
+            <returns></returns>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Abstracts.RepositoryBase`3.Alterar(`0,System.Boolean)">
+            <summary>
+            Persiste o objeto alterado no banco.
+            </summary>
+            <param name="obj">Objeto a ser persistido.</param>
+            <param name="SaveChanges">Define se a operação será efetivada imediatamente.</param>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Abstracts.RepositoryBase`3.Alterar(`0)">
+            <summary>
+            Persiste o objeto alterado no banco.
+            </summary>
+            <param name="obj">Objeto a ser persistido.</param>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Abstracts.RepositoryBase`3.Excluir(`0,System.Boolean)">
+            <summary>
+            Exclui o registro do banco.
+            </summary>
+            <param name="obj">Objeto com identificador referente ao registro a ser excluído.</param>
+            <param name="SaveChanges">Define se a operação será efetivada imediatamente.</param>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Abstracts.RepositoryBase`3.Excluir(`0)">
+            <summary>
+            Exclui o registro do banco.
+            </summary>
+            <param name="obj">Objeto com identificador referente ao registro a ser excluído.</param>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Abstracts.RepositoryBase`3.Excluir(System.Object[])">
+            <summary>
+             Exclui o registro do banco utilizando chave primária.
+            </summary>
+            <param name="keyValues">Identificador.</param>
+        </member>
+        <member name="M:INB.Infra.Data.LinqToSQL.Log.LogBase`2.GerarHistorico(System.Int32)">
+            <summary>
+            Executa a procedure spu_LogTransfereHistorico.
+            </summary>
+            <param name="Dias"></param>
+        </member>
+        <member name="M:INB.Infra.Data.Log.LogBase`2.GerarHistorico(System.Int32)">
+            <summary>
+            Executa a procedure spu_LogTransfereHistorico.
+            </summary>
+            <param name="Dias"></param>
+        </member>
+    </members>
+</doc>
